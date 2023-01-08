@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div
+      class="flex items-center justify-between bg-[#90B319] rounded-sm fixed w-full z-[2] border-b-2 border-x-2 border-black"
+    >
+      <!-- {/* Left Side */} -->
+      <div
+        class="flex items-center xl:justify-start gap-2.5 xl:ml-5 xl:w-[60rem] sm:w-full sm:justify-center"
+      >
+        <img src="./images/uni.png" class="my-3 h-10 w-12" />
+        <p class="font-newf font-semibold sm:text-[1.3rem] md:text-[1.5rem]">
+          University Research Monitoring System
+        </p>
+      </div>
+      <!-- {/* Right Side */} -->
+
+      <div class="xl:flex hidden items-center gap-7 mr-10">
+        <div
+          class="px-[0.8rem] py-2.5 relative rounded group overflow-hidden font-medium bg-[#90B319] text-black"
+        >
+          <button>
+            <span
+              class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-orange-600 group-hover:h-full opacity-90"
+            ></span>
+            <span
+              class="relative group-hover:text-white font-semibold font-mono sm:font-extrabold sm:text-[0.9rem]"
+            >
+              <a href="./home.html">HOME</a>
+            </span>
+          </button>
+        </div>
+        <div
+          class="px-[0.8rem] py-2.5 relative rounded group overflow-hidden font-medium bg-[#90B319] text-black"
+        >
+          <button>
+            <span
+              class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-orange-600 group-hover:h-full opacity-90"
+            ></span>
+            <span
+              class="relative group-hover:text-white font-semibold font-mono sm:font-extrabold sm:text-[0.9rem]"
+            >
+              <a href="./login.html">LOGIN</a>
+            </span>
+          </button>
+        </div>
+        <div
+          class="px-[0.8rem] py-2.5 relative rounded group overflow-hidden font-medium bg-[#90B319] text-black"
+        >
+          <button>
+            <span
+              class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-orange-600 group-hover:h-full opacity-90"
+            ></span>
+            <span
+              class="relative group-hover:text-white font-semibold font-mono sm:font-extrabold sm:text-[0.9rem]"
+            >
+              <a href="./signup.html ">SIGN UP</a>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- HERO -->
+    <div class="flex">
+      <img
+        src="./images/hero.png"
+        class="h-[36vw] w-screen object-cover border-b-4 border-b-black absolute z-[0]"
+      />
+      <div>
+        <img
+          src="./images/cs.png"
+          class="absolute rounded-full h-[16vw] w-[16vw] object-cover border-2 border-white top-[11vw] left-[21vw] shadow-lg shadow-slate-800 z-[1] p-[0.5]"
+        />
+        <img
+          src="./images/bus.png"
+          class="absolute rounded-full h-[9vw] w-[9vw] object-cover border-2 border-white top-[3.5vw] left-[37vw] shadow-lg shadow-slate-800 z-[1] p-[0.5]"
+        />
+        <img
+          src="./images/bio.png"
+          class="absolute rounded-full h-[12vw] w-[12vw] object-cover border-2 border-white top-[21vw] left-[40vw] shadow-lg shadow-slate-800 z-[1] p-[0.5]"
+        />
+        <img
+          src="./images/ai.png"
+          class="absolute rounded-full h-[12vw] w-[12vw] object-cover border-2 border-white top-[3.3vw] left-[53vw] shadow-lg shadow-slate-800 z-[1] p-[0.5]"
+        />
+      </div>
+    </div>
+    <!-- SEARCH BAR -->
+    <div class="flex mt-[40vw] items-center mb-[3rem]">
+      <input
+        type="search"
+        placeholder="Search Title..."
+        class="placeholder:lg:text-base placeholder:md:text-sm placeholder:sm:text-xs lg:ml-[15rem] md:ml-[10rem] sm:ml-[8rem] border border-slate-500 rounded-lg lg:p-4 md:p-3 sm:p-[9px] lg:pl-[3rem] md:pl-[3rem] sm:pl-[2rem] 2xl:w-[35rem] xl:w-[30rem] lg:w-[26rem] md:w-[20rem] sm:w-[15rem]"
+      />
+      <div class="flex items-center relative">
+        <button
+          class="bg-blue-700 px-4 py-2 rounded-lg lg:text-base md:text-sm sm:text-xs font-semibold text-white lg:-ml-[5.5rem] md:-ml-[5rem] sm:-ml-[4.6rem] hover:bg-blue-900 active:ring-offset-1 active:ring-blue-300 active:ring"
+        >
+          Search
+        </button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 2xl:-ml-[34.2rem] xl:-ml-[29rem] lg:-ml-[25rem] md:-ml-[19rem] sm:-ml-[14.5rem] text-slate-600 absolute"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+          />
+        </svg>
+      </div>
+      <input
+        type="search"
+        placeholder="Search Tag..."
+        class="placeholder:lg:text-base placeholder:md:text-sm placeholder:sm:text-xs lg:ml-[7rem] md:ml-[3rem] sm:ml-[2rem] border border-slate-500 rounded-lg lg:p-4 md:p-3 sm:p-[9px] lg:pl-[3rem] md:pl-[3rem] sm:pl-[2rem] 2xl:w-[25rem] xl:w-[20rem] lg:w-[16rem] md:w-[16rem] sm:w-[12rem]"
+      />
+      
+      <div class="flex items-center relative">
+        <button
+          class="bg-blue-700 px-4 py-2 rounded-lg lg:text-base md:text-sm sm:text-xs font-semibold text-white lg:-ml-[5.5rem] md:-ml-[5rem] sm:-ml-[4.6rem] hover:bg-blue-900 active:ring-offset-1 active:ring-blue-300 active:ring absolute"
+        >
+          Search
+        </button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 2xl:-ml-[24.2rem] xl:-ml-[19rem] lg:-ml-[15rem] md:-ml-[15rem] sm:-ml-[11.5rem] text-slate-600 absolute"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+          />
+        </svg>
+      </div>
+    </div>
+    <!-- CONTENT -->
+    <div class="">
+      <table class="table-auto border-collapse border-2 border-black w-full">
+        <thead>
+          <tr>
+            <th class="py-5 hover:bg-slate-700/50 w-[20rem]">S.no</th>
+            <th
+              class="py-5 hover:bg-slate-700/50 w-[20rem] cursor-pointer"
+              onclick="sortTable('uni')"
+            >
+              University
+            </th>
+            <th
+              class="py-5 hover:bg-slate-700/50 w-[20rem] cursor-pointer"
+              onclick="sortTable('title')"
+            >
+              Research Title
+            </th>
+            <th class="py-5 hover:bg-slate-700/50 w-[20rem] cursor-pointer">
+              Date Added
+            </th>
+            <th class="py-5 hover:bg-slate-700/50 w-[20rem] cursor-pointer">
+              Tags
+            </th>
+            <th class="py-5 hover:bg-slate-700/50 w-[20rem]">Progress</th>
+            <th class="py-5 hover:bg-slate-700/50 w-[20rem]">Link</th>
+          </tr>
+        </thead>
+        <tbody id="tableData"></tbody>
+      </table>
+      <footer class="text-center text-white" style="background-color: #0a4275">
+        <div class="container p-6">
+          <div class="">
+            <p class="flex justify-center items-center">
+              <span class="mr-4">Register for free</span>
+              <button
+                type="button"
+                class="inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-25"
+              >
+                <a href="./signup.html"> Sign up! </a>
+              </button>
+            </p>
+          </div>
+        </div>
+        <div
+          class="text-center p-4"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © 2021 Copyright:
+          <a class="text-white">XXXX</a>
+        </div>
+      </footer>
+    </div>
+    <script>
+      let sortOrder = "dsc";
+      let researchData = [
+        {
+          tag: "Tag ",
+          uni: "Ani ",
+          title: "K ",
+          progress: "-",
+          link: "Link ",
+          dateAdded: "xx/yy/zzzz",
+        },
+        {
+          tag: "Tag ",
+          uni: "Bni ",
+          title: "K ",
+          progress: "-",
+          link: "Link ",
+          dateAdded: "xx/yy/zzzz",
+        },
+        {
+          tag: "Tag ",
+          uni: "Cni ",
+          title: "D ",
+          progress: "-",
+          link: "Link ",
+          dateAdded: "xx/yy/zzzz",
+        },
+        {
+          tag: "Tag ",
+          uni: "Cni ",
+          title: "D ",
+          progress: "-",
+          link: "Link ",
+          dateAdded: "xx/yy/zzzz",
+        },
+        {
+          tag: "Tag ",
+          uni: "Dni ",
+          title: "J",
+          progress: "-",
+          link: "Link ",
+          dateAdded: "xx/yy/zzzz",
+        },
+        {
+          tag: "Tag ",
+          uni: "Eni ",
+          title: "X ",
+          progress: "-",
+          link: "Link ",
+          dateAdded: "xx/yy/zzzz",
+        },
+        {
+          tag: "Tag ",
+          uni: "Fni ",
+          title: "T ",
+          progress: "-",
+          link: "Link ",
+          dateAdded: "xx/yy/zzzz",
+        },
+        {
+          tag: "Tag ",
+          uni: "Gni ",
+          title: "C ",
+          progress: "-",
+          link: "Link ",
+          dateAdded: "xx/yy/zzzz",
+        },
+        {
+          tag: "Tag ",
+          uni: "Hni ",
+          title: "L ",
+          progress: "-",
+          link: "Link ",
+          dateAdded: "xx/yy/zzzz",
+        },
+        {
+          tag: "Tag ",
+          uni: "Ini ",
+          title: "F ",
+          progress: "-",
+          link: "Link ",
+          dateAdded: "xx/yy/zzzz",
+        },
+        {
+          tag: "Tag ",
+          uni: "Jni ",
+          title: "Z ",
+          progress: "-",
+          link: "Link ",
+          dateAdded: "xx/yy/zzzz",
+        },
+        {
+          tag: "Tag ",
+          uni: "Kni ",
+          title: "G ",
+          progress: "-",
+          link: "Link ",
+          dateAdded: "xx/yy/zzzz",
+        },
+        {
+          tag: "Tag ",
+          uni: "Lni ",
+          title: "M ",
+          progress: "-",
+          link: "Link ",
+          dateAdded: "xx/yy/zzzz",
+        },
+        {
+          tag: "Tag ",
+          uni: "Mni ",
+          title: "U ",
+          progress: "-",
+          link: "Link ",
+          dateAdded: "xx/yy/zzzz",
+        },
+        {
+          tag: "Tag ",
+          uni: "Nni ",
+          title: "R ",
+          progress: "-",
+          link: "Link ",
+          dateAdded: "xx/yy/zzzz",
+        },
+        {
+          tag: "Tag ",
+          uni: "Oni ",
+          title: "Q ",
+          progress: "-",
+          link: "Link ",
+          dateAdded: "xx/yy/zzzz",
+        },
+      ];
+      window.onload = () => {
+        loadTable(researchData);
+      };
+
+      const loadTable = (rowData) => {
+        const tb = document.getElementById("tableData");
+        let data = "";
+
+        for (let i = 0; i < rowData.length; i++) {
+          data += `<tr class="text-center hover:bg-slate-700/50"><td class="p-3">${
+            i + 1
+          }</td><td>${rowData[i].uni}</td><td>${rowData[i].title}</td><td>${
+            rowData[i].dateAdded
+          }</td><td>${rowData[i].tag + " " + (i + 1)}</td><td>${
+            rowData[i].progress
+          }</td><td class="text-blue-700 hover:text-black hover:font-semibold hover:cursor-pointer">${
+            rowData[i].link
+          } ${i + 1}</td></tr>`;
+        }
+
+        tb.innerHTML = data;
+      };
+
+      const sortTable = (col) => {
+        if (sortOrder == "dsc") {
+          const sorted = researchData.sort((a, b) =>
+            a[col].toLowerCase() > b[col].toLowerCase() ? 1 : -1
+          );
+          loadTable(sorted);
+          sortOrder = "asc";
+        } else {
+          const sorted = researchData.sort((a, b) =>
+            a[col].toLowerCase() < b[col].toLowerCase() ? 1 : -1
+          );
+          loadTable(sorted);
+          sortOrder = "dsc";
+        }
+      };
+    </script>
+  </body>
+</html>
